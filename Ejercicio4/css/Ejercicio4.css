@@ -1,0 +1,40 @@
+@font-face { 
+   font-family:"FasterOne" ; 
+src: url("/Ejercicio4/font/FasterOne-Regular.ttf")
+}
+
+div{
+    text-align: center;
+    margin-left: 42%;
+    margin-top: 8%;
+}
+
+fieldset{
+    border-radius: 20px;
+    border: 1px solid purple;
+    width: 350px;
+    height: 350px;
+}
+legend{
+    font-family: "FasterOne";
+    font-size: 45px;
+    color: purple;
+
+}
+
+.Inicio{
+    color: purple;
+    font-size: 25px;
+    
+}
+input{
+    border: 1px solid purple;
+    border-radius: 25px;
+    width: 200px;
+    height: 30px;
+
+}
+.en{
+    background-color: purple;
+    color: seashell;
+}
