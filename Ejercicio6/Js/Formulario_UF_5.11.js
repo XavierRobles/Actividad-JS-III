@@ -14,7 +14,8 @@ function Edad() {
 
 
   var select = document.getElementById("edad");
-  for (var i = yea; i <= 100; i++) select.options.add(new Option(i, i)); {
+  for (var i = yea; i <= 100; i++)  {
+    select.options.add(new Option(i, i));
 
   }
 
@@ -26,7 +27,8 @@ function Edad() {
 function year() {
   var n = (new Date()).getFullYear()
   var select = document.getElementById("year");
-  for (var i = n; i >= 1900; i--) select.options.add(new Option(i, i)); {
+  for (var i = n; i >= 1900; i--)  {
+    select.options.add(new Option(i, i));
 
   }
 
@@ -47,7 +49,8 @@ function Dia() {
 
 
   var select = document.getElementById("dia");
-  for (var i = dia; i <= 31; i++) select.options.add(new Option(i, i)); {
+  for (var i = dia; i <= 31; i++){
+    select.options.add(new Option(i, i)); 
 
   }
 
@@ -57,7 +60,7 @@ function Dia() {
 function validar() {
   /**Registro */
   /*almacenamos los valores de la cajas en los que introducimos los datos */
-  var nombre, apellido1, apellido2, mail, expresion, clave1, clave2;
+  var nombre, apellido1, apellido2, mail, expresion;
   nombre = document.getElementById("nombre");
   apellido1 = document.getElementById("apellido1");
   apellido2 = document.getElementById("apellido2");

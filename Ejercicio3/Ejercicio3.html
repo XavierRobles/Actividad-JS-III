@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Ejercicio3.css" />
+    <script type="text/javascript" src="./js/Ejercicio3.js"></script>
+    <title>Ejercicio 3</title>
+  </head>
+  <body">
+    <!-- 3) Desarrolla una página web con un formulario para recoger un nombre y una
+    edad:
+    Con el botón “Evaluar” se comprueba que las cajas de texto no estén vacías y que
+    la edad sea un número y que esté entre 0 y 100. Si se cumplen los requisitos se
+    muestra una ventana de alerta con los datos introducidos.
+    Con el botón “Resetear” las cajas de texto se vacían y el foco vuelve a la caja del
+    nombre. -->
+
+    <div>
+      <h1>Formulario de validacion</h1>
+      <br>
+      <form name="validacion">
+        Nombre:
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          size="30"
+          placeholder="Introduzca su nombre..."
+          
+        />
+        <br>
+        <br>
+
+                  Edad
+          <input
+            type="number"
+            name="edad"
+            id="edad"
+            placeholder="Introduzca su edad..."
+            
+          />
+          <br>
+          <br>
+          <input type="submit" name="enviar" value="Evaluar" onclick="evaluar()">
+          <input type="reset"  name="borrar" value=" Borrar" onclick="focu();">
+      </form>
+      <br>
+      
+    </div>
+  </body>
+</html>
