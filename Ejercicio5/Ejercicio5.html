@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Ejercicio5.css">
+    <script type="text/javascript" src="./js/Ejercicio5.js"></script>
+    <title>Ejercicio 5</title>
+</head>
+<body onload="Pagar(this)">
+    <!-- 5) En función de la opción del combo aparecerán unos datos u otros. Al enviar
+los datos deberá comprobar que todos los datos del formulario están rellenos
+y que los datos numéricos no contienen caracteres, y si todo es correcto
+aparecerá un mensaje modal que indique "Datos enviados correctamente". -->
+    
+
+<div>
+<h1>Fornas de pago</h1>
+</div>
+<form name="FormasdePagos" onsubmit="validar()">
+Nombre <input type="text" name="nombre" id="nombre">
+<br>
+<br>
+Apellidos <input type="text" name="apellidos" id="apellidos">
+<br><br>
+Telefono <input type="number" name="telefono" id="telefono">
+<br><br>
+Fornas de pago: <select name="Selec" onchange="Pagar(this)">
+    <option value="seleccion">--Seleccion--</option>
+    <option value="Tarjeta">Tarjeta</option>
+    <option value="Efectivo">Efectivo</option>
+</select>
+
+<br>
+
+
+<br>
+
+<div id="elec"></div>
+
+
+</form>
+</body>
+</html>
