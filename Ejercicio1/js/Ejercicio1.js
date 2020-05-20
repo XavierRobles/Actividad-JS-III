@@ -12,6 +12,9 @@ function Colores() {
         
     } else if (color.toLowerCase() == "azul") {
         document.body.style.backgroundColor = "blue";
+    }else{
+        alert("Introduzca un color entre Rojo, Amarillo, Verde o Azul");
+        Colores()
     }
     
 }
